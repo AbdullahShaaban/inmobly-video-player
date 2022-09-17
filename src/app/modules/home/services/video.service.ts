@@ -14,6 +14,7 @@ export class VideoService {
   private API_URL = environment.youtubeApi;
   private API_KEY = environment.apiKey;
 
+  
   constructor(private http: HttpClient) { }
 
   search(param: any): Observable<any> {
@@ -37,7 +38,8 @@ export class VideoService {
   }
 
   getVideo(id: any) {
-    const url = `${this.API_URL}videos?key=${this.API_KEY}&part=snippet,contentDetails,statistics&channelId=${this.myChannel}&type=video&maxResults=8&id=${id}`;
+    const url = `${this.API_URL}videos?key=${this.API_KEY}&part=snippet,contentDetails,statistics&
+                 channelId=${this.myChannel}&type=video&maxResults=8&id=${id}`;
 
     return this.http.get(url)
   }
