@@ -13,6 +13,7 @@ export class VideoService {
   private playListId = environment.playlistId;
   private API_URL = environment.youtubeApi;
   private API_KEY = environment.apiKey;
+
   
   constructor(private http: HttpClient) { }
 
@@ -23,9 +24,10 @@ export class VideoService {
       part: 'snippet',
       channelId: this.myChannel,
       topicId: this.playListId,
+      type: 'video',
       maxResults: 8,
       order: param.order ? param.order : 'relevance',
-      pageToken: param.pageToken,
+      pageToken: param.pageToken ? param.pageToken : '',
       safeSearch: 'none'
     }
 

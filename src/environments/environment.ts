@@ -7,7 +7,7 @@ export const environment = {
   youtubeApi: 'https://www.googleapis.com/youtube/v3/', // 3rd part lib to integrate with google console for youtube data api
   channelId: 'UCuaMJTqQ_W7qztqZ_zyErJg',//youtube random channel id
   playlistId: 'PL4cxv5XJ0LKLCNXfeaSpmSU1Vp4ChstW-',//youtube random playlist id
-  apiKey: 'AIzaSyBraBCp7e2QSL4eIToIg2PCX7-eCzMc4ZQ', // apikey from google to authenticate the api from my local account google
+  apiKey: 'AIzaSyB3LqdAcKXKvD6BZ8VcCCdbD7vSPRCNJP8', // apikey from google to authenticate the api from my local account google
   cacheTimeInMinutes: 30,
   // firebase configuration start here..
   firebaseConfig: {
